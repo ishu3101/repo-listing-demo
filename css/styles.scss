@@ -64,14 +64,6 @@ h3 {
     margin-right: 10px;
     vertical-align: middle;
     position: relative;
-    &:after {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
     &--sub {
         fill: #333;
         width: 16px;
@@ -105,7 +97,7 @@ h3 {
     width: 32.33%;
     margin: .5%;
     padding: 30px 30px;
-    background: #f4f4f4;
+    background: fade-out(#4078c0, 0.9);
     transition: .2s;
     @media (max-width: 960px) {
         width: 49%;
@@ -118,12 +110,17 @@ h3 {
         border-right: 0;
     }
     a {
+        color: #4078c0;
         text-decoration: none;
+    }
+    > .icon {
+        background: #4078c0;
     }
     &--html {
         background: fade-out(#F16529, 0.9);
         .icon {
             fill: #F16529;
+            background: transparent;
         }
         a {
             color: #F16529;
@@ -133,6 +130,7 @@ h3 {
         background: fade-out(#29A9DF, 0.9);
         .icon {
             fill: #29A9DF;
+            background: transparent;
         }
         a {
             color: #29A9DF;
@@ -142,6 +140,7 @@ h3 {
         background: fade-out(#E8C917, 0.9);
         .icon {
             fill: #E8C917;
+            background: transparent;
         }
         a {
             color: #E8C917;
@@ -151,6 +150,7 @@ h3 {
         background: fade-out(#617CBE, 0.9);
         .icon {
             fill: #617CBE;
+            background: transparent;
         }
         a {
             color: #617CBE;
@@ -160,6 +160,7 @@ h3 {
         background: fade-out(#95BE46, 0.9);
         .icon {
             fill: #95BE46;
+            background: transparent;
         }
         a {
             color: #95BE46;
