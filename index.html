@@ -19,7 +19,8 @@ description: A Demo of an Open Source Portfolio Using GitHub Pages
     </header>
 
     <ul class="portfolio">
-      {% for repo in site.github.public_repositories limit:28 %}
+      {% assign public_repo = site.github.public_repositories | sort: 'stargazers_count' | reverse %}
+      {% for repo in public_repo limit:28 %}
         {% if repo.fork != true %}
           <li class="repo  repo--{{ repo.language | downcase }}">
             <svg class="icon">
